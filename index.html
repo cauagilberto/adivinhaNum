@@ -5,3 +5,28 @@
     tag p para exibir mensagens de feedback (ex: "Muito alto", "Muito baixo", "Parabéns, você acertou!")
     tag p para mostrar o restando de tentativas
     -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jogo de Adivinhação</h1>
+        <p>Bem-vindo! Tente adivinhar o número entre 1 e 100.</p>
+        <p>Coloque o seu palpite na caixa de texto abaixo e logo em seguida clique no botão.</p>
+    </header>
+    <main>
+        <input type="number" name="Palpite" id="palpite" placeholder="Digite seu palpite aqui"><br><br>
+        <button type="button" id="enviar" onclick="verificarPalpite()">Enviar Palpite</button>
+    </main>
+    <footer>
+        <p id="feedback"></p>
+        <p id="tentativas"></p>
+    </footer>
+</body>
+</html>
