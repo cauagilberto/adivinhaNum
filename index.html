@@ -15,18 +15,18 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Jogo de Adivinhação</h1>
-        <p>Bem-vindo! Tente adivinhar o número entre 1 e 100.</p>
-        <p>Coloque o seu palpite na caixa de texto abaixo e logo em seguida clique no botão.</p>
-    </header>
     <main>
+        <header>
+            <h1>Jogo de Adivinhação</h1>
+            <p>Bem-vindo! Tente adivinhar o número entre 1 e 100.</p>
+            <p>Coloque o seu palpite na caixa de texto abaixo e logo em seguida clique no botão.</p>
+        </header>
         <input type="number" name="Palpite" id="palpite" placeholder="Digite seu palpite aqui"><br><br>
         <button type="button" id="enviar" onclick="verificarPalpite()">Enviar Palpite</button>
+        <footer>
+            <p id="feedback"></p>
+            <p id="tentativas"></p>
+        </footer>
     </main>
-    <footer>
-        <p id="feedback"></p>
-        <p id="tentativas"></p>
-    </footer>
 </body>
 </html>
